@@ -3,9 +3,14 @@
 Lucid dreaming app · Expo + React Native · iOS + Android · freemium modell.
 
 ## Tech stack
-- Expo + React Native (expo-router, AsyncStorage, expo-notifications)
+- Expo + React Native (expo-router, expo-notifications)
+- **Auth: Firebase Authentication — Google Sign-In**
+- **Adat: Cloud Firestore, offline-first (beépített offline persistence) + auto-szinkron**
+  - `users/{uid}/dreams/{id}`, `users/{uid}/settings`, premium a `uid`-hez kötve
+  - Működik offline/repülőmódban, net esetén automatikusan szinkronizál eszközök közt
+- PIN / biometrikus zár a login mellett (helyi védelem az intim adatra)
 - Store build: EAS Build + EAS Submit
-- Előfizetés: RevenueCat (`react-native-purchases`)
+- Előfizetés: RevenueCat (`react-native-purchases`), user `uid`-hez kötve
 - Reklám (free): Google AdMob (`react-native-google-mobile-ads`)
 - Egyetlen `isPremium` flag vezérli a limiteket + reklámot + zárolt funkciókat
 
@@ -25,6 +30,10 @@ Lucid dreaming app · Expo + React Native · iOS + Android · freemium modell.
 ---
 
 ## MVP (első kiadás)
+
+### Auth & adat
+- [ ] Firebase projekt + Google Sign-In (bejelentkező képernyő, `AuthContext`)
+- [ ] Firestore `lib/db.js` (offline persistence + szinkron), a régi AsyncStorage-réteg lecserélése
 
 ### Fő funkciók — 4 fül
 - [x] Technika-tartalmak (Napló, Reality checks, MILD, WBTB, WILD, Álomjelek)
