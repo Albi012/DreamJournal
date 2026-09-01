@@ -9,6 +9,10 @@ Lucid dreaming app · Expo + React Native · iOS + Android · freemium modell.
   - `users/{uid}/dreams/{id}`, `users/{uid}/settings`, premium a `uid`-hez kötve
   - Működik offline/repülőmódban, net esetén automatikusan szinkronizál eszközök közt
 - PIN / biometrikus zár a login mellett (helyi védelem az intim adatra)
+- **Többnyelvűség (i18n): `i18next` + `react-i18next` + `expo-localization`**
+  - Nyelvek: **magyar, angol, német** (mind LTR); alap/fallback: angol
+  - Minden UI-szöveg fordítási kulcson (`locales/{hu,en,de}.json`), nyelvváltó a beállításokban
+  - Technika-tartalmak mindhárom nyelven; új nyelv = csak egy új JSON, kód-változtatás nélkül
 - Store build: EAS Build + EAS Submit
 - Előfizetés: RevenueCat (`react-native-purchases`), user `uid`-hez kötve
 - Reklám (free): Google AdMob (`react-native-google-mobile-ads`)
@@ -30,6 +34,12 @@ Lucid dreaming app · Expo + React Native · iOS + Android · freemium modell.
 ---
 
 ## MVP (első kiadás)
+
+### Többnyelvűség (i18n)
+- [ ] i18next + expo-localization beállítás, eszköz-nyelv detektálás + nyelvváltó
+- [ ] `locales/hu.json`, `locales/en.json`, `locales/de.json` (UI-feliratok)
+- [ ] Technika-tartalmak fordítása mindhárom nyelvre
+- [ ] Minden UI-szöveg kulcson keresztül (nincs beégetett string)
 
 ### Auth & adat
 - [ ] Firebase projekt + Google Sign-In (bejelentkező képernyő, `AuthContext`)
