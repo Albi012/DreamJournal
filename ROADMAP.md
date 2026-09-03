@@ -2,6 +2,11 @@
 
 Lucid dreaming app · Expo + React Native · iOS + Android · freemium modell.
 
+## Dizájn irány — "Lágy hajnal" (B)
+Világos, nyugodt, editorial. Krém + levendula háttér, meleg amber/rózsa akcent, szilva
+tinta, lágy árnyékok. Display: Fraunces (serif), body: Manrope. Lucid jelvény: amber.
+Színek: `lib/theme.js`.
+
 ## Tech stack
 - Expo + React Native (expo-router, expo-notifications)
 - **Auth: Firebase Authentication — Google Sign-In**
