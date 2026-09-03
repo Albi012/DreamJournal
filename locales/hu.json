@@ -1,0 +1,119 @@
+{
+  "common": {
+    "all": "Összes",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "delete": "Törlés",
+    "edit": "Szerkesztés",
+    "back": "Vissza",
+    "yesterday": "tegnap",
+    "today": "ma",
+    "premium": "Prémium",
+    "upgrade": "Feloldás",
+    "continue": "Tovább"
+  },
+  "auth": {
+    "tagline": "Fogd meg az álmod, mielőtt elszáll.",
+    "google": "Bejelentkezés Google-fiókkal",
+    "guest": "Folytatás vendégként",
+    "guestNote": "A vendég adatok csak ezen az eszközön maradnak."
+  },
+  "tabs": {
+    "journal": "Napló",
+    "reality": "Ellenőrzés",
+    "insights": "Elemzés",
+    "techniques": "Technikák"
+  },
+  "journal": {
+    "greeting": "Egy csendes reggel.",
+    "recent": "Legutóbbi álmok",
+    "empty": "Még nincs feljegyzett álmod.\nKoppints a + gombra az elsőhöz.",
+    "newDream": "Új álom",
+    "editDream": "Álom szerkesztése",
+    "title": "Cím",
+    "titlePlaceholder": "Adj címet az álomnak…",
+    "body": "Mit álmodtál?",
+    "bodyPlaceholder": "Írd le, amire emlékszel…",
+    "mood": "Hangulat",
+    "lucid": "Lucid voltál?",
+    "tags": "Álomjelek / címkék",
+    "tagsPlaceholder": "pl. repülés, iskola, víz",
+    "quality": "Alvás minősége",
+    "search": "Keresés az álmokban…",
+    "deleteConfirm": "Biztosan törlöd ezt az álmot?"
+  },
+  "reality": {
+    "title": "Reality Check",
+    "subtitle": "Szokj rá a valóság tesztelésére.",
+    "enable": "Napi emlékeztetők",
+    "count": "Értesítések naponta",
+    "window": "Időablak",
+    "methods": "Gyors módszerek",
+    "method1": "Fogd be az orrod — tudsz-e rajta lélegezni?",
+    "method2": "Nézz a kezedre — torz, extra ujjak?",
+    "method3": "Olvass el egy szöveget kétszer — megváltozik?",
+    "freeLimit": "Ingyenesen napi max 3 értesítés. A prémium korlátlan.",
+    "permissionNeeded": "Engedélyezd az értesítéseket a beállításokban."
+  },
+  "insights": {
+    "title": "Elemzés",
+    "totalDreams": "Összes álom",
+    "lucidCount": "Lucid álmok",
+    "lucidRate": "Lucid arány",
+    "streak": "Sorozat",
+    "days": "nap",
+    "topSigns": "Leggyakoribb álomjelek",
+    "moodBreakdown": "Hangulat-eloszlás",
+    "signCloud": "Álomjel-felhő",
+    "heatmap": "Naptár-hőtérkép",
+    "premiumFeature": "Prémium funkció",
+    "noData": "Rögzíts pár álmot, hogy megjelenjenek az elemzések."
+  },
+  "techniques": {
+    "title": "Technikák",
+    "subtitle": "Lépésről lépésre a tudatos álomhoz.",
+    "steps": "Lépések",
+    "tips": "Tippek",
+    "premiumLocked": "Ez a technika prémium tartalom."
+  },
+  "badges": {
+    "title": "Mérföldkövek",
+    "firstDream": "Első álom",
+    "firstLucid": "Első lucid álom",
+    "streak7": "7 napos sorozat",
+    "streak30": "30 napos sorozat",
+    "lucid10": "10 lucid álom",
+    "dreams50": "50 álom"
+  },
+  "lock": {
+    "title": "Lucida zárolva",
+    "enterPin": "Add meg a PIN-kódot",
+    "setPin": "Állíts be egy 4 jegyű PIN-t",
+    "confirmPin": "Erősítsd meg a PIN-t",
+    "wrong": "Hibás PIN",
+    "useBiometrics": "Feloldás biometriával",
+    "enableLock": "Alkalmazászár (PIN / biometria)"
+  },
+  "paywall": {
+    "title": "Lucida Prémium",
+    "subtitle": "Oldd fel a teljes élményt.",
+    "f1": "Korlátlan álomnapló és teljes archívum",
+    "f2": "Reklámmentes élmény",
+    "f3": "Álomjel-elemzés, felhő és hőtérkép",
+    "f4": "Összes technika (MILD, WBTB, WILD)",
+    "f5": "Adat-export és backup",
+    "f6": "Korlátlan reality check értesítés",
+    "cta": "Előfizetés indítása",
+    "restore": "Vásárlás visszaállítása",
+    "trial": "7 nap ingyen, utána előfizetés",
+    "devToggle": "Fejlesztői kapcsoló (teszt)"
+  },
+  "settings": {
+    "title": "Beállítások",
+    "language": "Nyelv",
+    "account": "Fiók",
+    "signOut": "Kijelentkezés",
+    "guest": "Vendég",
+    "export": "Adatok exportálása"
+  }
+}

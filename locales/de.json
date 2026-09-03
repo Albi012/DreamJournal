@@ -1,0 +1,119 @@
+{
+  "common": {
+    "all": "Alle",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "yesterday": "gestern",
+    "today": "heute",
+    "premium": "Premium",
+    "upgrade": "Freischalten",
+    "continue": "Weiter"
+  },
+  "auth": {
+    "tagline": "Fang deinen Traum, bevor er verblasst.",
+    "google": "Mit Google anmelden",
+    "guest": "Als Gast fortfahren",
+    "guestNote": "Gastdaten bleiben nur auf diesem Gerät."
+  },
+  "tabs": {
+    "journal": "Tagebuch",
+    "reality": "Checks",
+    "insights": "Analyse",
+    "techniques": "Techniken"
+  },
+  "journal": {
+    "greeting": "Ein stiller Morgen.",
+    "recent": "Letzte Träume",
+    "empty": "Noch keine Träume erfasst.\nTippe auf +, um zu beginnen.",
+    "newDream": "Neuer Traum",
+    "editDream": "Traum bearbeiten",
+    "title": "Titel",
+    "titlePlaceholder": "Gib dem Traum einen Titel…",
+    "body": "Was hast du geträumt?",
+    "bodyPlaceholder": "Schreib auf, woran du dich erinnerst…",
+    "mood": "Stimmung",
+    "lucid": "Warst du luzid?",
+    "tags": "Traumzeichen / Tags",
+    "tagsPlaceholder": "z. B. Fliegen, Schule, Wasser",
+    "quality": "Schlafqualität",
+    "search": "Träume durchsuchen…",
+    "deleteConfirm": "Diesen Traum löschen?"
+  },
+  "reality": {
+    "title": "Reality Check",
+    "subtitle": "Gewöhne dir an, die Realität zu prüfen.",
+    "enable": "Tägliche Erinnerungen",
+    "count": "Erinnerungen pro Tag",
+    "window": "Zeitfenster",
+    "methods": "Schnelle Methoden",
+    "method1": "Nase zuhalten — kannst du noch atmen?",
+    "method2": "Schau auf deine Hände — verzerrt, extra Finger?",
+    "method3": "Lies einen Text zweimal — verändert er sich?",
+    "freeLimit": "Gratis: max. 3 Erinnerungen/Tag. Premium ist unbegrenzt.",
+    "permissionNeeded": "Aktiviere Benachrichtigungen in den Einstellungen."
+  },
+  "insights": {
+    "title": "Analyse",
+    "totalDreams": "Träume gesamt",
+    "lucidCount": "Luzide Träume",
+    "lucidRate": "Luzidrate",
+    "streak": "Serie",
+    "days": "Tage",
+    "topSigns": "Häufigste Traumzeichen",
+    "moodBreakdown": "Stimmungsverteilung",
+    "signCloud": "Traumzeichen-Wolke",
+    "heatmap": "Kalender-Heatmap",
+    "premiumFeature": "Premium-Funktion",
+    "noData": "Erfasse ein paar Träume, um Analysen zu sehen."
+  },
+  "techniques": {
+    "title": "Techniken",
+    "subtitle": "Schritt für Schritt zur Luzidität.",
+    "steps": "Schritte",
+    "tips": "Tipps",
+    "premiumLocked": "Diese Technik ist Premium-Inhalt."
+  },
+  "badges": {
+    "title": "Meilensteine",
+    "firstDream": "Erster Traum",
+    "firstLucid": "Erster luzider Traum",
+    "streak7": "7-Tage-Serie",
+    "streak30": "30-Tage-Serie",
+    "lucid10": "10 luzide Träume",
+    "dreams50": "50 Träume"
+  },
+  "lock": {
+    "title": "Lucida gesperrt",
+    "enterPin": "PIN eingeben",
+    "setPin": "Lege eine 4-stellige PIN fest",
+    "confirmPin": "PIN bestätigen",
+    "wrong": "Falsche PIN",
+    "useBiometrics": "Mit Biometrie entsperren",
+    "enableLock": "App-Sperre (PIN / Biometrie)"
+  },
+  "paywall": {
+    "title": "Lucida Premium",
+    "subtitle": "Schalte das volle Erlebnis frei.",
+    "f1": "Unbegrenztes Tagebuch und volles Archiv",
+    "f2": "Werbefreies Erlebnis",
+    "f3": "Traumzeichen-Analyse, Wolke und Heatmap",
+    "f4": "Alle Techniken (MILD, WBTB, WILD)",
+    "f5": "Datenexport und Backup",
+    "f6": "Unbegrenzte Reality-Check-Erinnerungen",
+    "cta": "Abo starten",
+    "restore": "Kauf wiederherstellen",
+    "trial": "7 Tage gratis, danach Abo",
+    "devToggle": "Entwickler-Schalter (Test)"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "account": "Konto",
+    "signOut": "Abmelden",
+    "guest": "Gast",
+    "export": "Daten exportieren"
+  }
+}

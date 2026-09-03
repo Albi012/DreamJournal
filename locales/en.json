@@ -1,0 +1,119 @@
+{
+  "common": {
+    "all": "All",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "yesterday": "yesterday",
+    "today": "today",
+    "premium": "Premium",
+    "upgrade": "Unlock",
+    "continue": "Continue"
+  },
+  "auth": {
+    "tagline": "Catch your dream before it fades.",
+    "google": "Sign in with Google",
+    "guest": "Continue as guest",
+    "guestNote": "Guest data stays only on this device."
+  },
+  "tabs": {
+    "journal": "Journal",
+    "reality": "Checks",
+    "insights": "Insights",
+    "techniques": "Techniques"
+  },
+  "journal": {
+    "greeting": "A quiet morning.",
+    "recent": "Recent dreams",
+    "empty": "No dreams recorded yet.\nTap + to add your first.",
+    "newDream": "New dream",
+    "editDream": "Edit dream",
+    "title": "Title",
+    "titlePlaceholder": "Give the dream a title…",
+    "body": "What did you dream?",
+    "bodyPlaceholder": "Write down what you remember…",
+    "mood": "Mood",
+    "lucid": "Were you lucid?",
+    "tags": "Dream signs / tags",
+    "tagsPlaceholder": "e.g. flying, school, water",
+    "quality": "Sleep quality",
+    "search": "Search your dreams…",
+    "deleteConfirm": "Delete this dream?"
+  },
+  "reality": {
+    "title": "Reality Check",
+    "subtitle": "Build the habit of testing reality.",
+    "enable": "Daily reminders",
+    "count": "Reminders per day",
+    "window": "Time window",
+    "methods": "Quick methods",
+    "method1": "Pinch your nose — can you still breathe?",
+    "method2": "Look at your hands — distorted, extra fingers?",
+    "method3": "Read text twice — does it change?",
+    "freeLimit": "Free: up to 3 reminders/day. Premium is unlimited.",
+    "permissionNeeded": "Enable notifications in settings."
+  },
+  "insights": {
+    "title": "Insights",
+    "totalDreams": "Total dreams",
+    "lucidCount": "Lucid dreams",
+    "lucidRate": "Lucid rate",
+    "streak": "Streak",
+    "days": "days",
+    "topSigns": "Top dream signs",
+    "moodBreakdown": "Mood breakdown",
+    "signCloud": "Dream-sign cloud",
+    "heatmap": "Calendar heatmap",
+    "premiumFeature": "Premium feature",
+    "noData": "Record a few dreams to see your insights."
+  },
+  "techniques": {
+    "title": "Techniques",
+    "subtitle": "Step by step toward lucidity.",
+    "steps": "Steps",
+    "tips": "Tips",
+    "premiumLocked": "This technique is premium content."
+  },
+  "badges": {
+    "title": "Milestones",
+    "firstDream": "First dream",
+    "firstLucid": "First lucid dream",
+    "streak7": "7-day streak",
+    "streak30": "30-day streak",
+    "lucid10": "10 lucid dreams",
+    "dreams50": "50 dreams"
+  },
+  "lock": {
+    "title": "Lucida locked",
+    "enterPin": "Enter your PIN",
+    "setPin": "Set a 4-digit PIN",
+    "confirmPin": "Confirm your PIN",
+    "wrong": "Wrong PIN",
+    "useBiometrics": "Unlock with biometrics",
+    "enableLock": "App lock (PIN / biometrics)"
+  },
+  "paywall": {
+    "title": "Lucida Premium",
+    "subtitle": "Unlock the full experience.",
+    "f1": "Unlimited journal and full archive",
+    "f2": "Ad-free experience",
+    "f3": "Dream-sign analysis, cloud and heatmap",
+    "f4": "All techniques (MILD, WBTB, WILD)",
+    "f5": "Data export and backup",
+    "f6": "Unlimited reality-check reminders",
+    "cta": "Start subscription",
+    "restore": "Restore purchase",
+    "trial": "7 days free, then subscription",
+    "devToggle": "Developer toggle (test)"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "account": "Account",
+    "signOut": "Sign out",
+    "guest": "Guest",
+    "export": "Export data"
+  }
+}
