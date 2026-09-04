@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { onAuthStateChanged, signOut as fbSignOut } from 'firebase/auth';
-import { auth, isFirebaseConfigured } from '../lib/firebase';
+import { getFirebaseAuth, isFirebaseConfigured } from '../lib/firebase';
 
 // session shape: { uid, isGuest, name, email } | null
 const AuthContext = createContext(null);
@@ -21,7 +21,8 @@ export function AuthProvider({ children }) {
         setLoading(false);
         return;
       }
-      if (isFirebaseConfigured) {
+      const auth = isFirebaseConfigured ? getFirebaseAuth() : null;
+      if (auth) {
         unsub = onAuthStateChanged(auth, (user) => {
           setSession(
             user
@@ -48,7 +49,8 @@ export function AuthProvider({ children }) {
 
   const signOut = async () => {
     await AsyncStorage.removeItem(GUEST_KEY);
-    if (isFirebaseConfigured && auth.currentUser) {
+    const auth = isFirebaseConfigured ? getFirebaseAuth() : null;
+    if (auth?.currentUser) {
       try { await fbSignOut(auth); } catch (e) {}
     }
     setSession(null);

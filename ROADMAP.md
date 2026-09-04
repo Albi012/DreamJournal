@@ -8,11 +8,15 @@ tinta, lágy árnyékok. Display: Fraunces (serif), body: Manrope. Lucid jelvén
 Színek: `lib/theme.js`.
 
 ## Tech stack
-- Expo + React Native (expo-router, expo-notifications)
+- Expo **SDK 57** + React Native 0.86 (expo-router, expo-notifications)
 - **Auth: Firebase Authentication — Google Sign-In**
-- **Adat: Cloud Firestore, offline-first (beépített offline persistence) + auto-szinkron**
-  - `users/{uid}/dreams/{id}`, `users/{uid}/settings`, premium a `uid`-hez kötve
-  - Működik offline/repülőmódban, net esetén automatikusan szinkronizál eszközök közt
+- **Adat: Cloud Firestore**
+  - `users/{uid}/dreams/{id}`, `users/{uid}/meta/settings`, premium a `uid`-hez kötve
+  - ⚠️ **Offline-first megjegyzés:** a Firebase *JS* SDK nem tud lemezre cache-elni
+    React Native alatt (IndexedDB-t igényelne), ezért most memória-cache fut.
+    A valódi offline-first + eszközök közti szinkronhoz a store-buildben
+    **@react-native-firebase/firestore**-ra kell váltani (natív SDK, lemezre ment;
+    dev build kell hozzá, Expo Go-ban nem fut).
 - PIN / biometrikus zár a login mellett (helyi védelem az intim adatra)
 - **Többnyelvűség (i18n): `i18next` + `react-i18next` + `expo-localization`**
   - Nyelvek: **magyar, angol, német** (mind LTR); alap/fallback: angol
@@ -50,6 +54,7 @@ Színek: `lib/theme.js`.
 - [x] Bejelentkező képernyő + `AuthContext` + vendég mód (Google gomb kész, valós OAuth a configgal aktiválható)
 - [x] Firestore `lib/db.js` (offline persistence + szinkron), vendég = lokális fallback
 - [ ] Valódi Firebase config + Google OAuth client ID-k behelyezése
+- [ ] Váltás `@react-native-firebase/firestore`-ra a valódi offline persistence-hez (dev build)
 
 ### Fő funkciók — 4 fül
 - [x] Technika-tartalmak (Napló, Reality checks, MILD, WBTB, WILD, Álomjelek)
