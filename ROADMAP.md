@@ -41,32 +41,33 @@ Színek: `lib/theme.js`.
 ## MVP (első kiadás)
 
 ### Többnyelvűség (i18n)
-- [ ] i18next + expo-localization beállítás, eszköz-nyelv detektálás + nyelvváltó
-- [ ] `locales/hu.json`, `locales/en.json`, `locales/de.json` (UI-feliratok)
-- [ ] Technika-tartalmak fordítása mindhárom nyelvre
-- [ ] Minden UI-szöveg kulcson keresztül (nincs beégetett string)
+- [x] i18next + expo-localization beállítás, eszköz-nyelv detektálás + nyelvváltó
+- [x] `locales/hu.json`, `locales/en.json`, `locales/de.json` (UI-feliratok, teljes paritás)
+- [ ] Technika-tartalmak fordítása mindhárom nyelvre (jelenleg HU)
+- [x] Minden UI-szöveg kulcson keresztül (nincs beégetett string)
 
 ### Auth & adat
-- [ ] Firebase projekt + Google Sign-In (bejelentkező képernyő, `AuthContext`)
-- [ ] Firestore `lib/db.js` (offline persistence + szinkron), a régi AsyncStorage-réteg lecserélése
+- [x] Bejelentkező képernyő + `AuthContext` + vendég mód (Google gomb kész, valós OAuth a configgal aktiválható)
+- [x] Firestore `lib/db.js` (offline persistence + szinkron), vendég = lokális fallback
+- [ ] Valódi Firebase config + Google OAuth client ID-k behelyezése
 
 ### Fő funkciók — 4 fül
 - [x] Technika-tartalmak (Napló, Reality checks, MILD, WBTB, WILD, Álomjelek)
-- [ ] 🌙 **Napló**: rögzítés (cím, szöveg, hangulat, lucid kapcsoló, álomjel-címkék, dátum), lista, szerkesztés/törlés, kereső
-- [ ] 👁 **Reality Check**: véletlenszerű napi értesítések állítható időablakban + módszer-emlékeztető
-- [ ] 📊 **Insights**: lucid arány, streak, leggyakoribb álomjelek, hangulat-eloszlás
-- [ ] 📖 **Technikák**: útmutató-képernyők (tartalom kész)
+- [x] 🌙 **Napló**: rögzítés (cím, szöveg, hangulat, lucid kapcsoló, álomjel-címkék, dátum), lista, szerkesztés/törlés, kereső
+- [x] 👁 **Reality Check**: véletlenszerű napi értesítések állítható időablakban + módszer-emlékeztető
+- [x] 📊 **Insights**: lucid arány, streak, leggyakoribb álomjelek, hangulat-eloszlás
+- [x] 📖 **Technikák**: útmutató-képernyők (tartalom kész)
 
 ### Extra MVP funkciók (jóváhagyva)
-- [ ] 🔒 **PIN / biometrikus zár** — app-belépéskor (free, bizalomépítő)
-- [ ] 🔥 **Streak + badgek** — napló-sorozat, mérföldkövek (első lucid álom, 10 lucid álom…) (free, megtartás)
-- [ ] ☁️ **Álomjel-felhő + naptár-hőtérkép** — vizuális elemzés (premium horog)
+- [x] 🔒 **PIN / biometrikus zár** — app-belépéskor (free, bizalomépítő)
+- [x] 🔥 **Streak + badgek** — napló-sorozat, mérföldkövek (első lucid álom, 10 lucid álom…) (free, megtartás)
+- [x] ☁️ **Álomjel-felhő + naptár-hőtérkép** — vizuális elemzés (premium horog)
 
 ### Monetizáció-váz (MVP-ben struktúra, éles bekötés store-fázisban)
-- [ ] `PremiumContext` + `isPremium` flag (fejlesztésben kézzel kapcsolható)
-- [ ] `Locked` wrapper + Paywall képernyő
-- [ ] `lib/limits.js` — free limitek
-- [ ] `lib/ads.js` + `<AdBanner/>` (fejlesztésben no-op, élesben AdMob)
+- [x] `PremiumContext` + `isPremium` flag (paywall dev-kapcsolóval tesztelhető)
+- [x] `Locked` wrapper + Paywall képernyő
+- [x] `lib/limits.js` — free limitek
+- [x] `lib/ads.js` + `<AdBanner/>` (fejlesztésben no-op, élesben AdMob)
 
 ### Store-fázis
 - [ ] `eas.json`, ikon (1024×1024), splash, screenshotok
