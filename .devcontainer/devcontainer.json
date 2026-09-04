@@ -1,0 +1,14 @@
+{
+  "name": "Lucida (Expo)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "npm install && npm install --save-dev @expo/ngrok@^4.1.0",
+  "forwardPorts": [8081],
+  "portsAttributes": {
+    "8081": { "label": "Expo dev server", "onAutoForward": "notify" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["expo.vscode-expo-tools"]
+    }
+  }
+}

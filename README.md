@@ -39,3 +39,20 @@ context/        Auth, Premium, Lock, Dreams providerek
 lib/            firebase, db, i18n, stats, ads, limits, notifications, theme, techniques
 locales/        hu / en / de fordítások
 ```
+
+## Futtatás böngészőből (GitHub Codespaces)
+
+Nem kell semmit telepíteni a gépre, és a telefon **mobilnetről** is csatlakozhat.
+
+1. A repó GitHub-oldalán: zöld **`< > Code`** gomb → **Codespaces** fül →
+   **Create codespace on `claude/lucid-dreaming-app-5iw2jh`**
+2. Megnyílik egy VS Code a böngészőben, és magától lefuttatja az `npm install`-t
+   (a `.devcontainer` beállítás miatt) — ez az első alkalommal pár perc.
+3. A Codespace termináljába írd:
+   ```bash
+   npx expo start --tunnel
+   ```
+4. Olvasd be a megjelenő QR-kódot az **Expo Go** appal. Mivel tunnel megy,
+   a telefonnak nem kell közös hálózaton lennie a szerverrel.
+
+A kód szerkeszthető is ott, és mentéskor a telefonon azonnal frissül.
