@@ -31,12 +31,15 @@ export default function RealityScreen() {
     if (next.reminderCount > maxCount) next.reminderCount = maxCount;
     setSettings(next);
     await dbApi.saveSettings(session, next);
-    if (next.reminderEnabled) {
-      const { granted } = await Notifications.requestPermissionsAsync();
-      if (granted) await scheduleReminders(next);
-    } else {
-      await cancelReminders();
-    }
+    // Notifications are native-only; ignore failures on unsupported platforms.
+    try {
+      if (next.reminderEnabled) {
+        const { granted } = await Notifications.requestPermissionsAsync();
+        if (granted) await scheduleReminders(next);
+      } else {
+        await cancelReminders();
+      }
+    } catch (e) {}
   };
 
   if (!settings) return <Screen><View /></Screen>;

@@ -16,7 +16,7 @@ export default function Settings() {
   const router = useRouter();
   const { session, signOut } = useAuth();
   const { isPremium } = usePremium();
-  const { enabled: lockEnabled, disableLock } = useLock();
+  const { available: lockAvailable, enabled: lockEnabled, disableLock } = useLock();
   const [lang, setLang] = useState(i18n.language);
 
   const changeLang = (l) => { setLanguage(l); setLang(l); };
@@ -65,10 +65,16 @@ export default function Settings() {
             <Switch
               value={lockEnabled}
               onValueChange={toggleLock}
+              disabled={!lockAvailable}
               trackColor={{ true: c.primary, false: '#e2d7de' }}
               thumbColor="#fff"
             />
           </View>
+          {!lockAvailable && (
+            <Text style={styles.lockHint}>
+              Az alkalmazászár csak telefonon érhető el (böngészőben nem).
+            </Text>
+          )}
         </Card>
 
         {/* Data / sign out */}
@@ -95,6 +101,7 @@ const styles = StyleSheet.create({
   radioOn: { borderColor: c.primary, backgroundColor: c.primary },
   row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   rowLabel: { fontSize: 15, fontWeight: '600', color: c.text },
+  lockHint: { marginTop: 10, fontSize: 12, color: c.textFaint, lineHeight: 17 },
   signOut: { marginTop: 34, alignItems: 'center', paddingVertical: 14 },
   signOutText: { color: c.danger, fontSize: 15, fontWeight: '600' },
 });
